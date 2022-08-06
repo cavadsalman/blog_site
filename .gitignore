@@ -1,2 +1,4 @@
 activate.bat
 __pycache__
+.env
+staticfiles

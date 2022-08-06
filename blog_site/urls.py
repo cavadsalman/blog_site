@@ -17,9 +17,10 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
+import os
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path(os.getenv('ADMIN_URL'), admin.site.urls),
     path('', include('info.urls')),
     path('contact/', include('contact.urls')),
     path('blog/', include('blog.urls')),
