@@ -141,4 +141,4 @@ STATICFILES_FINDERS = [
 ]
 
 MEDIA_ROOT = 'media'
-MEDIA_URL = 'media'
+MEDIA_URL = 'media/'
